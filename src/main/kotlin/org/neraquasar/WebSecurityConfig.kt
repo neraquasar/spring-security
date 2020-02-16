@@ -13,21 +13,19 @@ import org.springframework.security.provisioning.InMemoryUserDetailsManager
 @EnableWebSecurity
 open class WebSecurityConfig : WebSecurityConfigurerAdapter() {
 
-/*
     override fun configure(http: HttpSecurity) {
         http
                 .authorizeRequests()
-                .antMatchers("/").permitAll()
+                .antMatchers("/*").authenticated()
                 .anyRequest().authenticated()
                 .and()
                 .formLogin()
-                .loginPage("/login")
+//                .loginPage("/login")
                 .permitAll()
                 .and()
                 .logout()
                 .permitAll()
     }
-*/
 
     @Bean
     public override fun userDetailsService(): UserDetailsService {

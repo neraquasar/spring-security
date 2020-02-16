@@ -1,7 +1,7 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.3.41"
+    kotlin("jvm") version "1.3.61"
 }
 
 group = "org.neraquasar"
@@ -13,7 +13,7 @@ repositories {
 }
 
 val kotlinVersion = "1.3.+"
-val springBootVersion = "2.1.8.RELEASE"
+val springBootVersion = "2.2.4.RELEASE"
 dependencies {
     implementation(kotlin("stdlib", kotlinVersion))
     implementation("org.jetbrains.kotlin:kotlin-reflect:$kotlinVersion")
